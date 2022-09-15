@@ -14,7 +14,10 @@ export class UsersService {
     return User.save();
   }
 
-  async findOne(params: any): Promise<UserDocument | undefined> {
-    return this.userModel.findOne(params).exec();
+  async findOne(
+    params: any,
+    select?: string,
+  ): Promise<UserDocument | undefined> {
+    return this.userModel.findOne(params).select(select).exec();
   }
 }

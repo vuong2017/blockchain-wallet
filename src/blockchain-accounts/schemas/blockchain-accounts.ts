@@ -10,7 +10,7 @@ export class BlockchainAccount {
   @Prop({ type: mongoose.SchemaTypes.ObjectId, ref: User.name })
   userId: mongoose.Types.ObjectId;
 
-  @Prop({ required: true })
+  @Prop({ required: true, select: false })
   privateKey: string;
 
   @Prop({ required: true })
