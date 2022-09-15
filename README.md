@@ -18,7 +18,7 @@ $ npm run start:dev
 # production mode
 $ npm run start:prod
 ```
-MongoDB port: mongodb://localhost:27017/blockchain
+MongoDB port: mongodb://localhost:27017
 
 ## Test
 
